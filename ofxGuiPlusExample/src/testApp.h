@@ -2,7 +2,7 @@
 
 #include "ofMain.h"
 #include "ofxGuiPlus.h"
-
+#include "ofxGui.h"
     
 class testApp : public ofBaseApp{
         

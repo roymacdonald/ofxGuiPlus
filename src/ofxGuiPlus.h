@@ -8,4 +8,4 @@
 #pragma once
 #include "ofxSliderPlus.h"
 #include "ofxSliderGroupPlus.h"
-#include "ofxPanelPlus.h"
+
