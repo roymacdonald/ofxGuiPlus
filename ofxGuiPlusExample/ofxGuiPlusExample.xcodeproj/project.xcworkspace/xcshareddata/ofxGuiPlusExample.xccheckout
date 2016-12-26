@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>BEC6B61C-65DA-4C49-8A9B-098E7E75CBBF</string>
+	<key>IDESourceControlProjectName</key>
+	<string>ofxGuiPlusExample</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>36575DBB87B2F735369841E0DD1C5E4824256C31</key>
+		<string>https://github.com/roymacdonald/ofxGuiPlus.git</string>
+		<key>A6343E16BC2F648D0FEA647FB75CBADE0A25E0B8</key>
+		<string>https://github.com/roymacdonald/ofxTextInputField.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>ofxGuiPlusExample/ofxGuiPlusExample.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>36575DBB87B2F735369841E0DD1C5E4824256C31</key>
+		<string>../../..</string>
+		<key>A6343E16BC2F648D0FEA647FB75CBADE0A25E0B8</key>
+		<string>../../../../ofxTextInputField</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/roymacdonald/ofxGuiPlus.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>36575DBB87B2F735369841E0DD1C5E4824256C31</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>36575DBB87B2F735369841E0DD1C5E4824256C31</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ofxGuiPlus</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>A6343E16BC2F648D0FEA647FB75CBADE0A25E0B8</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ofxTextInputField</string>
+		</dict>
+	</array>
+</dict>
+</plist>

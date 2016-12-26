@@ -20,7 +20,8 @@ public:
     ofxSliderPlus(ofParameter<Type> _val, float width = ofxSlider<Type>::defaultWidth, float height = ofxSlider<Type>::defaultHeight);
     ofxSliderPlus* setup(ofParameter<Type> _val, float width = ofxSlider<Type>::defaultWidth, float height = ofxSlider<Type>::defaultHeight);
     ofxSliderPlus* setup(std::string sliderName, Type _val, Type _min, Type _max, float width = ofxSlider<Type>::defaultWidth, float height = ofxSlider<Type>::defaultHeight);
-    
+	
+	
    	virtual bool mouseMoved(ofMouseEventArgs & args);
     virtual bool mousePressed(ofMouseEventArgs & args);
     virtual bool mouseDragged(ofMouseEventArgs & args);
@@ -59,7 +60,8 @@ protected:
     void setTextInputBounds(const ofRectangle& boundingBox, const ofRectangle& sliderBox, int padding);
     void setTextInputBounds(string str);
     bool bShiftPressed, bArrowKeys;
-};
 
+};
+typedef ofxSliderPlus<double> ofxDoubleSliderPlus;
 typedef ofxSliderPlus<float> ofxFloatSliderPlus;
 typedef ofxSliderPlus<int> ofxIntSliderPlus;

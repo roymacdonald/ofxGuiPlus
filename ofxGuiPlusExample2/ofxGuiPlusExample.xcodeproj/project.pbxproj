@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B03A4F4C1DF4C48C00368C6D /* ofxGuiGroupPlus.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B03A4F4A1DF4C48C00368C6D /* ofxGuiGroupPlus.cpp */; };
+		B03A4F4F1DF4EADB00368C6D /* ofxPanelPlus.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B03A4F4D1DF4EADB00368C6D /* ofxPanelPlus.cpp */; };
 		B04DEAA81B7E5398007D230F /* ofxDropDown.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B04DEAA11B7E5398007D230F /* ofxDropDown.cpp */; };
 		B04DEAA91B7E5398007D230F /* ofxSliderGroupPlus.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B04DEAA41B7E5398007D230F /* ofxSliderGroupPlus.cpp */; };
 		B04DEAAA1B7E5398007D230F /* ofxSliderPlus.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B04DEAA61B7E5398007D230F /* ofxSliderPlus.cpp */; };
@@ -54,6 +56,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B03A4F4A1DF4C48C00368C6D /* ofxGuiGroupPlus.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxGuiGroupPlus.cpp; sourceTree = "<group>"; };
+		B03A4F4B1DF4C48C00368C6D /* ofxGuiGroupPlus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxGuiGroupPlus.h; sourceTree = "<group>"; };
+		B03A4F4D1DF4EADB00368C6D /* ofxPanelPlus.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxPanelPlus.cpp; sourceTree = "<group>"; };
+		B03A4F4E1DF4EADB00368C6D /* ofxPanelPlus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxPanelPlus.h; sourceTree = "<group>"; };
 		B04DEAA11B7E5398007D230F /* ofxDropDown.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ofxDropDown.cpp; sourceTree = "<group>"; };
 		B04DEAA21B7E5398007D230F /* ofxDropDown.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxDropDown.h; sourceTree = "<group>"; };
 		B04DEAA31B7E5398007D230F /* ofxGuiPlus.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxGuiPlus.h; sourceTree = "<group>"; };
@@ -114,6 +120,10 @@
 		B04DEAA01B7E5398007D230F /* src */ = {
 			isa = PBXGroup;
 			children = (
+				B03A4F4D1DF4EADB00368C6D /* ofxPanelPlus.cpp */,
+				B03A4F4E1DF4EADB00368C6D /* ofxPanelPlus.h */,
+				B03A4F4A1DF4C48C00368C6D /* ofxGuiGroupPlus.cpp */,
+				B03A4F4B1DF4C48C00368C6D /* ofxGuiGroupPlus.h */,
 				B04DEAA11B7E5398007D230F /* ofxDropDown.cpp */,
 				B04DEAA21B7E5398007D230F /* ofxDropDown.h */,
 				B04DEAA31B7E5398007D230F /* ofxGuiPlus.h */,
@@ -165,7 +175,6 @@
 				B0DAD3F81B6A01DE0050DF3D /* src */,
 			);
 			name = ofxTextInputField;
-			path = ..;
 			sourceTree = "<group>";
 		};
 		B0DAD3F81B6A01DE0050DF3D /* src */ = {
@@ -182,6 +191,7 @@
 		BB4B014C10F69532006C3DED /* addons */ = {
 			isa = PBXGroup;
 			children = (
+				B0DAD3F71B6A01DE0050DF3D /* ofxTextInputField */,
 				B0DAD3DC1B6A01D30050DF3D /* ofxGui */,
 				B04DEA9F1B7E5398007D230F /* ofxGuiPlus */,
 			);
@@ -213,7 +223,6 @@
 			children = (
 				B0DAD3D11B6A00BC0050DF3D /* testApp.cpp */,
 				B0DAD3D21B6A00BC0050DF3D /* testApp.h */,
-				B0DAD3F71B6A01DE0050DF3D /* ofxTextInputField */,
 				E4B69E1D0A3A1BDC003C02F2 /* main.cpp */,
 			);
 			path = src;
@@ -316,6 +325,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B04DEAAA1B7E5398007D230F /* ofxSliderPlus.cpp in Sources */,
+				B03A4F4C1DF4C48C00368C6D /* ofxGuiGroupPlus.cpp in Sources */,
+				B03A4F4F1DF4EADB00368C6D /* ofxPanelPlus.cpp in Sources */,
 				B0DAD3F61B6A01D30050DF3D /* ofxToggle.cpp in Sources */,
 				B0DAD3F51B6A01D30050DF3D /* ofxSliderGroup.cpp in Sources */,
 				B04DEAA81B7E5398007D230F /* ofxDropDown.cpp in Sources */,

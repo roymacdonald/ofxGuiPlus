@@ -14,7 +14,24 @@ void testApp::setup() {
     gui.add(s1.setup("regular ofxFloatSlider", 1, 0, 100));                      // <--- regular ofxFloatSlider, just to compare
     gui.add(color.setup(" Color", ofColor::red, ofColor(0,0), ofColor(255,255)));// <--- instanced ofxColorSliderPlus
     gui.add(new ofxColorSliderPlus(colorParam.set("ColorParam", ofColor::yellow, ofColor(0,0), ofColor(255,255))));
-    gui.add(new ofxDropDown("Dropdown", list));    
+    gui.add(new ofxDropDown("Dropdown", list));
+	
+	g1.setName("g1");
+	g2.setName("g2");
+	g3.setName("g3");
+	
+	v2.set("v2", ofVec2f(0),ofVec2f(0),ofVec2f(1));
+	v3.set("v3", ofVec3f(0),ofVec3f(0),ofVec3f(1));
+	v4.set("v4", ofVec4f(0),ofVec4f(0),ofVec4f(1));
+	
+	g1.add(v2);
+	g1.add(f1.set("f1", 0,0,1));
+	g2.add(v3);
+	g3.add(v4);
+	g2.add(g1);
+	g3.add(g2);
+	gui.add(g3);
+	
 }
 
 //--------------------------------------------------------------
@@ -44,8 +61,8 @@ void testApp::draw() {
     
     int numLines = ofSplitString(str, "\n").size();
     int lineHeight = 8 * 1.7;
-    ofDrawBitmapStringHighlight(str, 20, ofGetHeight() - numLines*lineHeight -4);
-    
+//    ofDrawBitmapStringHighlight(str, 20, ofGetHeight() - numLines*lineHeight -4);
+	
     
 }
 

@@ -11,6 +11,7 @@
 #include "ofxSliderGroup.h"
 #include "ofxSliderPlus.h"
 
+
 template<class VecType>
 class ofxVecSliderPlus_ : public ofxVecSlider_<VecType> {
 public:

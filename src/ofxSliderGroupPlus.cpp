@@ -12,6 +12,8 @@
 //--------------------------------------------------------------                VEC SLIDER
 //----------------------------------------------------------------------------------------------------------------------------
 
+
+
 using namespace std;
 //*
 template<class VecType>
@@ -34,9 +36,12 @@ ofxVecSliderPlus_<VecType> * ofxVecSliderPlus_<VecType>::setup(ofParameter<VecTy
     VecType val = value;
     VecType min = value.getMin();
     VecType max = value.getMax();
-    
-    for (int i=0; i<VecType::DIM; i++) {
-        ofParameter<float> p(names[i], val[i], min[i], max[i]);
+#ifdef USE_GLM
+	for (int i=0; i<ofxVecSlider_<VecType>::dim(); i++) {
+#else
+	for (int i=0; i<VecType::DIM; i++) {
+#endif
+		ofParameter<float> p(names[i], val[i], min[i], max[i]);
         ofxGuiGroup::add(new ofxSliderPlus<float>(p, width, height));
         p.addListener(this, & ofxVecSliderPlus_<VecType>::changeSlider);
     }
@@ -49,7 +54,7 @@ ofxVecSliderPlus_<VecType> * ofxVecSliderPlus_<VecType>::setup(ofParameter<VecTy
 template<class VecType>
 ofxVecSliderPlus_<VecType> * ofxVecSliderPlus_<VecType>::setup(string controlName, const VecType & v, const VecType & min, const VecType & max, float width, float height){
     ofxVecSlider_<VecType>::value.set(controlName,v,min,max);
-    return setup(ofxVecSlider_<VecType>::value,width,height);
+    return setup(ofxVecSliderPlus_<VecType>::value,width,height);
 }
 
 template<class VecType>
@@ -65,7 +70,11 @@ void ofxVecSliderPlus_<VecType>::changeValue(VecType & value){
 template class ofxVecSliderPlus_<ofVec2f>;
 template class ofxVecSliderPlus_<ofVec3f>;
 template class ofxVecSliderPlus_<ofVec4f>;
-
+#ifdef USE_GLM
+template class ofxVecSliderPlus_<glm::vec2>;
+template class ofxVecSliderPlus_<glm::vec3>;
+template class ofxVecSliderPlus_<glm::vec4>;
+#endif
 //----------------------------------------------------------------------------------------------------------------------------
 //--------------------------------------------------------------                COLOR SLIDER
 //----------------------------------------------------------------------------------------------------------------------------

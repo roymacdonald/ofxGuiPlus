@@ -341,12 +341,13 @@ void ofxSliderPlus<Type>::render(){
     }
 }
 //--------------------------------------------------------------
-template class ofxSliderPlus<int>;
-template class ofxSliderPlus<unsigned int>;
 template class ofxSliderPlus<float>;
 template class ofxSliderPlus<double>;
-template class ofxSliderPlus<signed char>;
-template class ofxSliderPlus<unsigned char>;
-template class ofxSliderPlus<unsigned short>;
-template class ofxSliderPlus<short>;
-
+template class ofxSliderPlus<int8_t>;
+template class ofxSliderPlus<uint8_t>;
+template class ofxSliderPlus<int16_t>;
+template class ofxSliderPlus<uint16_t>;
+template class ofxSliderPlus<int32_t>;
+template class ofxSliderPlus<uint32_t>;
+template class ofxSliderPlus<int64_t>;
+template class ofxSliderPlus<uint64_t>;
